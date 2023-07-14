@@ -8,6 +8,9 @@ The data set
 
 The corresponding images for the cancer class were obtained from the dataset collected by the Oncology University Hospital in Iraq over a three-month period in the autumn of 2019. It includes computed tomography scans from patients diagnosed with neoplastic formations in various stages, as well as healthy patients. In total, there are 1190 images belonging to 110 cases grouped as follows: 40 confirmed malignant cases, 15 benign cases, and 55 healthy cases. Only the malignant cases were used for the actual implementation. This classification was performed by specialized physicians from the mentioned centers.
 
+Source:alyasriy, hamdalla; AL-Huseiny, Muayed (2023), “The IQ-OTH/NCCD lung cancer dataset”, Mendeley Data, V4, doi: 10.17632/bhmdr45bh2.4)
+
+
 The data was initially collected in DICOM format but was converted to PNG format. Information regarding the acquisition method includes:
 
 - The SOMATOM device from Siemens was used for data acquisition.
@@ -15,7 +18,7 @@ The data was initially collected in DICOM format but was converted to PNG format
 - The image reading utilized a window from 350 to 1200 Hounsfield units (HU), centered from 50 to 600 HU.
 
 For the COVID-19 class, the data was extracted from a public collection of images collected from hospitals in Sao Paulo, Brazil. The dataset contains 2482 images, out of which 1252 are from confirmed SARS-CoV-2 patients. The data format is PNG, and no details are provided regarding the acquisition method or the equipment used.
-
+Source:  Soares, Eduardo, Angelov, Plamen, Biaso, Sarah, Higa Froes, Michele, and Kanda Abe, Daniel. "SARS-CoV-2 CT-scan dataset: A large dataset of real patients CT scans for SARS-CoV-2 identification." medRxiv (2020). doi: https://doi.org/10.1101/2020.04.24.20078584.
 Due to the fact that the data originates from two completely different sources, it was necessary to preprocess the files to provide the network with a more balanced dataset. Neither of the two image sets organizes the slices according to the originating patient, which is a limitation addressed in the results chapter.
 
 In total, 560 images were used for each class, with 364 for training, 91 for validation, and 105 for testing.
